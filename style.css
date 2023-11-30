@@ -39,19 +39,20 @@ body{
     margin:0;
     font:inherit;
     max-width: 850px;
-    /* font-size: 2.5vw; */
+    /* font-size: 1.5vh; */
     font-size:1rem;
-    background-color: var(--clr-dark-cyan);
+    background-color: var(--clr-cream);
 }
 
 .container{
-    /* padding: 2em 3em; */
-    margin:6rem;
-    margin-left: 25rem;
-    width: 33rem;
     
+    margin:5rem;
+    margin-left: 25rem;
+    width: 35rem;
+    height: 26rem;
 
-    border: 1px solid black;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 9px;
 
     display: grid;
@@ -62,21 +63,21 @@ body{
 
 /* IMAGE SECTION */
 .Section-Image{
-    width: 16.6em;
+    width: 14.2rem;
 }
 img{
-    object-position: right top;
+    object-position:right top;
     object-fit:contain;
-    width:17.6em;
-    /* height:150% ; */
+    width:17.6rem;
     border-top-left-radius:9px;
-    border-bottom-left-radius: 9px;
+    border-bottom-left-radius:9px;
 
     grid-row-start:1;
     grid-row-end:4;
 
     grid-column-start: 1;
     grid-column-end: 2;
+    
 
     
 }
@@ -87,7 +88,7 @@ img{
 
 /* TEXT SECTION */
 .Section-Text{
-    width: 16.7em;
+    width: 17.3em;
     background-color: var(--clr-White);
     border-top-right-radius:9px;
     border-bottom-right-radius: 9px;
@@ -98,6 +99,8 @@ img{
 
     grid-column-start: 2;
     grid-column-start: 3;
+
+    height:26.3rem;
 
 }
 .Section-Text #imp{
@@ -111,12 +114,16 @@ p{
 .Section-Text :nth-child(1){
     font-weight: var(--mont-wght-med);
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .Section-Text :nth-child(2){
     font-family: var(--font-frans);
     font-weight: var(--fraunces-wght-bold);
     width: 10ch;
+    margin-top: 0.5rem;
+    font-size:1.9rem;
+    line-height: 100%;
 }
 .Section-Text :nth-child(3){
     font-family: var(--font-mont);
@@ -127,12 +134,24 @@ p{
 }
 .Section-Text :nth-child(4){
     color: var(--clr-dark-cyan);
+    font-size:var(--step-0);
     font-family: var(--font-frans);
     font-weight: var(--fraunces-wght-bold);
+    margin-top: 1rem;
+    margin-bottom:0%;
+    display: inline-block;
+    margin-right: 3%;
+    }
+
+.Section-Text :nth-child(5){
+    font-size: 0.7rem;
+    color: var(--clr-grayish-blue);
+    display: inline-block;
+    vertical-align:super;
+    font-family: var(--font-mont);
+    font-weight: var(--mont-wght-med);
+    text-decoration:line-through;
 }
-/* .Section-Text :nth-child(5){
-    display: inline-flex;
-}*/
 
 
 embed{
@@ -146,7 +165,8 @@ button {
     background-color: var(--clr-dark-cyan);
     border: 1px solid transparent;
     border-radius: 7px;
-    padding: 0.75rem 2.9rem;
+    padding: 0.75rem 3.5rem;
+    margin-top:12.5%;
 }
 
 
